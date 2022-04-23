@@ -52,6 +52,7 @@ Then we were tasked with analyzing county turnouts:
    county_votes[county_name] += 1
    ```
 **The percent of votes per county and which county had the largest number of votes** (Denver County) were determined through the following code:
+
 ![Screenshot 2022-04-23 134623.png](https://raw.githubusercontent.com/LaurenDebes/ElectionAnalysis/main/Screenshot%202022-04-23%20134623.png)
 
 **Number and percentage of total votes for each candidate:**
@@ -75,10 +76,10 @@ Then we were tasked with analyzing county turnouts:
    candidate_votes[candidate_name] += 1
    ```
 **The percent of votes per candidate and which candidate had the largest number of votes** (Diana DeGette) were determined through the following code:
+
 ![candidate_code.png](https://raw.githubusercontent.com/LaurenDebes/ElectionAnalysis/main/candidate_code.png)
 
-**Winner Information**
-Diana DeGette won the election with 272,892 votes, which is 73.8% of the total vote count.
+**Winner Information:** Diana DeGette won the election with 272,892 votes, which is 73.8% of the total vote count.
 
 ## Election-Audit Summary
 This script can be simply rewritten to provide results for any election. There only needs to be a CSV (Excel) file of results and I can provide the exact same analysis. I would just need to change the code to reflect any changes in the file such as if there were a different method of organizing data into columns, I would alter the code to correspond to the correct column (e.g. our candidate list was in column 2, if it moved to column 5 the code would need to change to candidate_name = row[5] instead). The same script could be used for other election questions as well, such as yes/no votes on bond questions. We would just alter the code so it were more readable, replacing candidate name variables with something like bondvote or yes_or_no_answer. 
